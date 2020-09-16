@@ -1,0 +1,23 @@
+#!/bin/bash
+#include <stdio.h>
+int main()
+{
+
+char c;
+$CFILE *fptr1;
+c *ftpr2;
+
+ftpr1 = fopen("$CFILE", "r");
+ftpr2 = fopen("c", "w");
+
+c = fgetc(fptr1);
+
+fputc(c, ftpr2);
+
+c=fget(fptr1);
+
+fclose(ftpr1);
+fclose(ftpr2);
+
+return 0;
+}

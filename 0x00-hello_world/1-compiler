@@ -1,0 +1,10 @@
+#!/bin/bash
+#include <stdio.h>
+int main()
+{
+$CFILE = *fptr
+
+
+
+return 0;
+}
