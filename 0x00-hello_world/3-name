@@ -1,2 +1,2 @@
 #!/bin/bash
-cisfun=$CFILE
+$cisfun=$CFILE
