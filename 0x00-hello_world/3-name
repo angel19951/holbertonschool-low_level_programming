@@ -1,2 +1,2 @@
 #!/bin/bash
-char cisfun = $CFILE
+gcc -g -c $CFILE > cisfun
