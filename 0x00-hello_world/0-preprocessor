@@ -3,10 +3,10 @@
 int main()
 {
 
-char fileValue;
+
 $CFILE *sourceF;
 $c *destinationF;
-
+char fileValue;
 sourceF = fopen($CFILE, "r");
 destinationF = fopen($c, "w");
 
