@@ -1,10 +1,2 @@
 #!/bin/bash
-#include <stdio.h>
-int main()
-{
-$CFILE = *fptr
-
-
-
-return 0;
-}
+gcc -E $CFILE 2> main.o
