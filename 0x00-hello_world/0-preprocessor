@@ -2,5 +2,6 @@
 #include <stdio.h>
 int main(void)
 {
+printf($CFILE, $c)
 return 0;
 }
