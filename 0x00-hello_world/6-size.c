@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-
+malloc(sizeof($32))
 
 return (0);
 }
