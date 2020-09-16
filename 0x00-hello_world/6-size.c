@@ -5,17 +5,11 @@
 */
 int main(void)
 {
-char character;
-int integer;
-long int longInteger;
-long long int longlongInteger;
-float decimal;
-
-printf("Size of a char:"sizeof(character));
-printf("Sizr of an int:"sizeof(integer));
-printf("Size of a long int:"sizeof(longInteger));
-ptintf("Size of a long long int:"sizeof(longlongInteger));
-printf("Size of a float:"sizeof(decimal));
+printf("Size of a char:"sizeof(char));
+printf("Sizr of an int:"sizeof(int));
+printf("Size of a long int:"sizeof(long int));
+ptintf("Size of a long long int:"sizeof(long long int));
+printf("Size of a float:"sizeof(float));
 
 return (0);
 }
