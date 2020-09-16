@@ -1,14 +1,2 @@
 #!/bin/bash
-#include <stdio.h>
-int main(void)
-{
-char copyValue;
-FILE $CFILE;
-FILE $c;
-
-fopen($CFILE, "r");
-fopen($c, "w");
-fputc($c);
-
-return 0;
-}
+gcc -e $CFILE -o $c
