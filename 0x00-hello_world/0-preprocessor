@@ -2,6 +2,13 @@
 #include <stdio.h>
 int main(void)
 {
-printf($CFILE, $c)
+char copyValue;
+FILE $CFILE;
+FILE $c;
+
+fopen($CFILE, "r");
+fopen($c, "w");
+fputc($c);
+
 return 0;
 }
