@@ -14,8 +14,8 @@ c = fgetc(fptr1);
 
 fputc(c, ftpr2);
 
-c=fget(fptr1);
-
+c = fget(fptr1);
+printf(c)
 fclose(ftpr1);
 fclose(ftpr2);
 
