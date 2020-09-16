@@ -1,15 +1,12 @@
 #include <stdio.h>
 /**
-* main - Print size of written value
-* Return: return function 0 value at end
+* main - Print size of variables
+* Return: return 0 value at end of program
 */
 int main(void)
 {
-printf("Size of a char:"sizeof(char));
-printf("Sizr of an int:"sizeof(int));
-printf("Size of a long int:"sizeof(long int));
-ptintf("Size of a long long int:"sizeof(long long int));
-printf("Size of a float:"sizeof(float));
+printf(sizeof("/tmp/32")
+printf(sizeof("/tmp/64")
 
 return (0);
 }
