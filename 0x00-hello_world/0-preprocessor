@@ -3,19 +3,17 @@
 int main()
 {
 
-char c;
-$CFILE *fptr1;
-c *ftpr2;
+char fileValue;
+$CFILE *sourceF;
+$c *destinationF;
 
-ftpr1 = fopen("$CFILE", "r");
-ftpr2 = fopen("c", "w");
+sourceF = fopen("$CFILE", "r");
+destinationF = fopen("$c", "w");
 
-c = fgetc(fptr1);
+fileValue =fgetc(sourceF);
 
-fputc(c, ftpr2);
+fputc(fileValue, $c);
 
-c = fget(fptr1);
-printf(c)
 fclose(ftpr1);
 fclose(ftpr2);
 
