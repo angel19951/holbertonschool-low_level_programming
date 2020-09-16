@@ -5,8 +5,8 @@
 */
 int main(void)
 {
-printf(sizeof("/tmp/32")
-printf(sizeof("/tmp/64")
+printf(sizeof(size32)
+printf(sizeof(size64)
 
 return (0);
 }
