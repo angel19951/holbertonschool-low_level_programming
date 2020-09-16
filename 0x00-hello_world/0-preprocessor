@@ -7,8 +7,8 @@ char fileValue;
 $CFILE *sourceF;
 $c *destinationF;
 
-sourceF = fopen("$CFILE", "r");
-destinationF = fopen("$c", "w");
+sourceF = fopen($CFILE, "r");
+destinationF = fopen($c, "w");
 
 fileValue =fgetc(sourceF);
 
