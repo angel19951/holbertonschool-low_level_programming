@@ -16,6 +16,7 @@ if(exception != 'e' && exception != 'q')
 putchar(exception);
 }
 }
+
 putchar('\n');
 return (0);
 }
