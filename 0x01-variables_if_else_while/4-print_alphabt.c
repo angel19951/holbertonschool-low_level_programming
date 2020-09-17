@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
 * main - prints alphabet except for e and q.
 *
@@ -12,8 +13,9 @@ for (exception = 'a' ; exception <= 'z' ; exception++)
 {
 if(exception != 'e' && exception != 'q')
 {
-putchar(exception)
+putchar(exception);
 }
 }
+putchar('\n');
 return (0);
 }
