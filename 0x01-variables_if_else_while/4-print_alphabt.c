@@ -11,7 +11,7 @@ int main(void)
 char exception;
 for (exception = 'a' ; exception <= 'z' ; exception++)
 {
-if(exception != 'e' && exception != 'q')
+if (exception != 'e' && exception != 'q')
 {
 putchar(exception);
 }
