@@ -15,6 +15,7 @@ if (n < 8)
 {
 putchar((n % 10) + '0');
 putchar(',');
+putchar(' ');
 }
 if (n == 9)
 {
