@@ -13,9 +13,8 @@ for (n = 0 ; n <= 9 ; n++)
 {
 if (n < 8)
 {
-putchar((n % 10) + '0');
-putchar(',');
-putchar(' ');
+putchar((n % 10) + ('0'));
+putchar(',') + (' ');
 }
 if (n == 9)
 {
