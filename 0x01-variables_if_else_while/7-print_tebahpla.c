@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+* main - prints the alphabet in reverse order
+*
+* Return: return 0 value at end of function
+*/
 int main(void)
 {
 char revAlpha;
