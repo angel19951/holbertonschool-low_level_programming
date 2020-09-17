@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
 * main - uses put char to print the aplhabet.
 *
@@ -9,9 +10,9 @@ int main(void)
 {
 char alphabet;
 
-for (aphabet = 'a' ; alphabet <= 'z' ; alphabet++)
+for (alphabet = 'a' ; alphabet <= 'z' ; alphabet++)
 {
-putchar(alphabet);
+putchar(alphabet + '\n');
 }
 
 
