@@ -10,9 +10,10 @@
 int main(void)
 {
 char revAlpha;
-for(revAlpha = 'z' ; revAlpha >= 'a' ; revAlpha--)
+for (revAlpha = 'z' ; revAlpha >= 'a' ; revAlpha--)
 {
 putchar(revAlpha);
 }
+putchar('\n');
 return (0);
 }
