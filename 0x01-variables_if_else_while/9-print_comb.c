@@ -8,17 +8,14 @@
 */
 int main(void)
 {
-int n;
-for (n = 0 ; n <= 9 ; n++)
+int n = 0;
+for (n = 0; n <= 9 ; n++)
 {
-if (n < 8)
+putchar((n) + '0');
+if (n != 9)
 {
-putchar((n % 10) + ('0'));
-putchar(',') + (' ');
-}
-if (n == 9)
-{
-putchar((n % 10) + '0');
+putchar(',');
+putchar(' ');
 }
 }
 putchar('\n');
