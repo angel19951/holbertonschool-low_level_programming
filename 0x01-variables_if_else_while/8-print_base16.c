@@ -1,7 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
+/**
+* main - Prints base 16 with putchar
+*
+* Return: return 0 value at end of function
+*/
 int main(void)
 {
 char n;
@@ -14,6 +17,7 @@ for (n = 'a' ; n <= 'f'; n++)
 {
 putchar(n);
 }
+
 putchar('\n');
 return (0);
 }
