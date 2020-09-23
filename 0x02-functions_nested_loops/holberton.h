@@ -16,7 +16,7 @@ int _islower(int);
 int _isalpha(int);
 
 /* 5.print_sing function prototype */
-int print_sing(int);
+int print_sign(int);
 /* 6._abs function prototype */
 int _abs(int);
 #endif

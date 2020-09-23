@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
 * print_sign - prints sing according to the value of variable
 * @n: variable to be checked
