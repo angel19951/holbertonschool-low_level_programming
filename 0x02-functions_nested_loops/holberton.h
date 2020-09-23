@@ -1,7 +1,7 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 /* 0._putchar function prototype */
-int _putchar(char c);
+int _putchar(char);
 
 /* 1.print_alphabet function prototype */
 void print_alphabet(void);
@@ -10,13 +10,13 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 
 /* 3._islower function prototype */
-int _islower(int c);
+int _islower(int);
 
 /* 4._isalpha function prototype */
-int _isalpha(int c);
+int _isalpha(int);
 
 /* 5.print_sing function prototype */
-
+int print_sing(int);
 /* 6._abs function prototype */
 int _abs(int);
 #endif
