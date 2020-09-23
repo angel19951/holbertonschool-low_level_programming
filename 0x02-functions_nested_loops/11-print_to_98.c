@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
-*
-*
-*
+* print_to_98 - increases until 98 or subtracts
+* @n: variable to be printed
+* Return: no return
 */
 
 void print_to_98(int n)
@@ -19,7 +19,7 @@ void print_to_98(int n)
 		{
 			n++;
 		}
-		
+
 	}
 	printf("%d", n);
 	printf("\n");
