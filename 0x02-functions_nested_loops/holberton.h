@@ -32,4 +32,7 @@ void times_table(void);
 
 /* 10. add two integer function prototype */
 int add(int, int);
+
+/* 11.print all natural numbers function prototype */
+void print_to_98(int n);
 #endif
