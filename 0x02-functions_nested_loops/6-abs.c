@@ -8,7 +8,7 @@ int _abs(int aV)
 {
 	if (aV < 0)
 	{
-		aV = -aV;
+		aV = aV * -1;
 		return (aV);
 	}
 	else
