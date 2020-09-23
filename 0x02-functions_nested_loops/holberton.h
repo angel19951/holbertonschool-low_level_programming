@@ -1,17 +1,22 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
-/* _putchar function prototype */
+/* 0._putchar function prototype */
 int _putchar(char c);
 
-/* print_alphabet function prototype */
+/* 1.print_alphabet function prototype */
 void print_alphabet(void);
 
-/* print_alphabet_x10 function prototype */
+/* 2.print_alphabet_x10 function prototype */
 void print_alphabet_x10(void);
 
-/* _islower function prototype */
+/* 3._islower function prototype */
 int _islower(int c);
 
-/* _isalpha function prototype */
+/* 4._isalpha function prototype */
 int _isalpha(int c);
+
+/* 5.print_sing function prototype */
+
+/* 6._abs function prototype */
+int _abs(int);
 #endif
