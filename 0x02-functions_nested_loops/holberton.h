@@ -17,6 +17,10 @@ int _isalpha(int);
 
 /* 5.print_sing function prototype */
 int print_sign(int);
+
 /* 6._abs function prototype */
 int _abs(int);
+
+/* 7.print_last_digit function prototype*/
+int print_last_digit(int);
 #endif
