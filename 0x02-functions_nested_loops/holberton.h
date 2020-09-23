@@ -21,6 +21,15 @@ int print_sign(int);
 /* 6._abs function prototype */
 int _abs(int);
 
-/* 7.print_last_digit function prototype*/
+/* 7.print_last_digit function prototype */
 int print_last_digit(int);
+
+/* 8.print every minute function prototype */
+void jack_bauer(void);
+
+/* 9.print the 9 times table function prototype */
+void times_table(void);
+
+/* 10. add two integer function prototype */
+int add(int, int);
 #endif
