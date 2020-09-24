@@ -6,4 +6,7 @@ void positive_or_negative(int);
 
 /* 1.main function prototype */
 void main(void);
+
+/* 2.largerst number function prototype */
+int largest_number(int, int, int);
 #endif
