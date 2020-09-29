@@ -8,29 +8,29 @@ int _putchar(char);
 void reset_to_98(int *n);
 
 /* 1. */
-void swap_int(int, int);
+void swap_int(int *a, int *b);
 
 /* 2. */
-int _strlen(char);
+int _strlen(char *s);
 
 /* 3. */
-void _puts(char);
+void _puts(char *str);
 
 /* 4. */
-void print_rev(char);
+void print_rev(char *s);
 
 /* 5. */
-void rev_string(char);
+void rev_string(char *s);
 
 /* 6. */
-void puts2(char);
+void puts2(char *str);
 
 /* 7. */
-void puts_half(char);
+void puts_half(char *str);
 
 /* 8. */
-void print_array(int, int);
+void print_array(int *a, int);
 
 /* 9. *_strcpy function prototype */
-char *_strcpy(char, char);
+char *_strcpy(char *dest, char *src);
 #endif
