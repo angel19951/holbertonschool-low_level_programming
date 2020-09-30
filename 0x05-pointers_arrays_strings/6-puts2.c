@@ -7,10 +7,12 @@
 void puts2(char *str)
 {
 	int count;
+	char *stHolder;
 
-	for (count = 0 ; str[count] != '\0' ; count += 2)
+	stHolder = str;
+	for (count = 0 ; *(stHolder + count) != '\0' ; count += 2)
 	{
-		_putchar(str[count]);
+		_putchar(*(stHolder + count));
 	}
 	_putchar('\n');
 }
