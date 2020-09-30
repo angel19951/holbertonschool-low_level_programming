@@ -10,9 +10,12 @@ void puts2(char *str)
 	char *stHolder;
 
 	stHolder = str;
-	for (count = 0 ; *(stHolder + count) != '\0' ; count += 2)
+	for (count = 0 ; *(stHolder + count) != '\0' ; count++)
 	{
+		if (*(stHolder + count) % 2 == 0)
+		{
 		_putchar(*(stHolder + count));
+		}
 	}
 	_putchar('\n');
 }
