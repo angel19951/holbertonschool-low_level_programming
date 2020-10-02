@@ -26,9 +26,9 @@ char *string_toupper(char *);
 char *cap_string(char *);
 
 /* 7. char *leet function prototype */
-char *leet(char *s);
+char *leet(char *);
 
 /* 8.  *rot13 function prototype */
-char *rot13(char *s);
+char *rot13(char *);
 
 #endif
