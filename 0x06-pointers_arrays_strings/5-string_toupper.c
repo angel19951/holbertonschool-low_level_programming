@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * *string_toupper - changes lower cases to upper case
- * 
+ * @toUpper: variable to be change to upper case
  * Return: return c
  */
 char *string_toupper(char *toUpper)
@@ -13,7 +13,7 @@ char *string_toupper(char *toUpper)
 		;
 	for (changer = 0 ; changer < counter ; changer++)
 	{
-		if(toUpper[changer] >= 'a' && toUpper[changer] <= 'z')
+		if (toUpper[changer] >= 'a' && toUpper[changer] <= 'z')
 		{
 			toUpper[changer] = toUpper[changer] - 'a' + 'A';
 		}
