@@ -8,7 +8,7 @@
 char *cap_string(char *cap)
 {
 int count;
-int sp[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\t', '\n', '\0'};
+int sp[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\t', '\n'};
 int sepCount;
 
 	for (count = 0 ; cap[count] != '\0' ; count++)
