@@ -25,10 +25,9 @@ int sepCount;
 		{
 			if (cap[count] == sp[sepCount])
 			{
-				count++;
-				if (cap[count] >= 'a' && cap[count] <= 'z')
+				if (cap[count + 1] >= 'a' && cap[count + 1] <= 'z')
 				{
-					cap[count] = cap[count] - 32;
+					cap[count + 1] = cap[count + 1] - 32;
 				}
 			}
 		}
