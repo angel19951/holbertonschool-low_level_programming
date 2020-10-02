@@ -5,16 +5,33 @@
  * @toUpper: variable to be switched to upper case
  * Return: return toUpper
  */
-char *cap_string(char *toUpper)
+char *cap_string(char *cap)
 {
 	int count;
+	int separator[] = {'"', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\t', '\n'};
+	int sepCount;
 
-	for (count = 0 ; toUpper[count] != '\0' ; count++)
+	for (count = 0 ; cap[count] != '\0' ; count++)
 	{
-		if (toUpper[count] >= 'a' && toUpper[count] <= 'z')
+		if (count == 0)
 		{
-			toUpper[count] = toUpper[count] - 'a' + 'A';
+			if ((cap[count] >= 'a' && cap[count] <= 'z'))
+			{
+			cap[count] = cap[count] - 32;
+			}
+			continue;
+		}
+		for (sepCount = 0 ; separator[sepCount] != '\0' ; sepCount++)
+		{
+			if (cap[count] == separator[sepCount])
+			{
+				count++;
+				if (cap[count] >= 'a' && cap[count] <= 'z')
+				{
+					cap[count] = cap[count] - 32;
+				}
+			}
 		}
 	}
-	return (toUpper);
+		return (cap);
 }
