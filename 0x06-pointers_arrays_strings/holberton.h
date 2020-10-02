@@ -25,8 +25,10 @@ char *string_toupper(char *);
 /* 6. *cap_string function prototype */
 char *cap_string(char *);
 
-/* 7.  */
+/* 7. char *leet function prototype */
+char *leet(char *s);
 
-/* 8.  */
+/* 8.  *rot13 function prototype */
+char *rot13(char *s);
 
 #endif
