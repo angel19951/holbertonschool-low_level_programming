@@ -11,21 +11,9 @@ char *cap_string(char *toUpper)
 
 	for (count = 0 ; toUpper[count] != '\0' ; count++)
 	{
-		if (*toUpper >= 'a' && *toUpper <= 'z')
+		if (toUpper[count] >= 'a' && toUpper[count] <= 'z')
 		{
-			return (toUpper);
-		}
-		else if (*toUpper >= 'A' && *toUpper <= 'Z')
-		{
-			return (toUpper);
-		}
-		else if (*toUpper >= '1' && *toUpper <= '9')
-		{
-			return (toUpper);
-		}
-		else
-		{
-			return (0);
+			toUpper[count] = toUpper[count] - 'a' + 'A';
 		}
 	}
 	return (toUpper);
