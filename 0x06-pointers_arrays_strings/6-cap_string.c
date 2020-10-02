@@ -2,14 +2,14 @@
 
 /**
  * *cap_string - cappitalize string but ignore seperators
- * @toUpper: variable to be switched to upper case
+ * @cap: variable to be switched to upper case
  * Return: return toUpper
  */
 char *cap_string(char *cap)
 {
-	int count;
-	int separator[] = {'"', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\t', '\n'};
-	int sepCount;
+int count;
+int sp[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\t', '\n'};
+int sepCount;
 
 	for (count = 0 ; cap[count] != '\0' ; count++)
 	{
@@ -21,9 +21,9 @@ char *cap_string(char *cap)
 			}
 			continue;
 		}
-		for (sepCount = 0 ; separator[sepCount] != '\0' ; sepCount++)
+		for (sepCount = 0 ; sp[sepCount] != '\0' ; sepCount++)
 		{
-			if (cap[count] == separator[sepCount])
+			if (cap[count] == sp[sepCount])
 			{
 				count++;
 				if (cap[count] >= 'a' && cap[count] <= 'z')
