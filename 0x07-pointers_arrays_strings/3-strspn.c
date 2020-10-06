@@ -11,7 +11,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int count;
 	int count1;
-	
+
 	if (*s == '\0' || *accept == '\0')
 	{
 		return (0);
@@ -27,4 +27,4 @@ unsigned int _strspn(char *s, char *accept)
 		}
 	}
 	return (0);
-}	
+}
