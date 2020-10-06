@@ -10,19 +10,20 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int count;
-	int count0;
-	int finder;
+	int count1;
+	int finder = 0;
 
-	for (count0 = 0; s[count0] != '\0'; count0++)
+	for (count = 0; *(accept + count) != '\0'; count++)
 	{
-		for (count = 0; accept[count] != '\0'; count++)
+		for (count1 = 0; *(s + count1) != '\0'; count1++)
 		{
-			if (s[count0] == accept[count])
+			if (*(s + count) == *(accept + count1))
 			{
 				finder++;
 				break;
 			}
 		}
 	}
-	return (finder);
+	return (finder + 1);
 }
+
