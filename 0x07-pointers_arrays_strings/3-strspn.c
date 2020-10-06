@@ -11,19 +11,18 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int count;
 	int count1;
-	int finder = 0;
 
-	for (count = 0; *(accept + count) != '\0'; count++)
+
+	for (count = 0; accept[count] != '\0'; count++)
 	{
 		for (count1 = 0; *(s + count1) != '\0'; count1++)
 		{
-			if (*(s + count) == *(accept + count1))
+			if (*(s + count1) == *(accept + count))
 			{
-				finder++;
-				break;
+				return (count1 + 1);
 			}
 		}
 	}
-	return (finder + 1);
+	return (0);
 }
 
