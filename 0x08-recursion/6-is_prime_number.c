@@ -18,7 +18,7 @@ int is_prime_number(int n)
 
 	for (count = 2; count <= n / 2; count++)
 	{
-		if((n % count) == 0)
+		if ((n % count) == 0)
 		{
 			prime = 1;
 			break;
