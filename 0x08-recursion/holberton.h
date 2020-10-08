@@ -21,6 +21,7 @@ int _pow_recursion(int x, int y);
 
 /* 5. _sqrt_recursion function prototype */
 int _sqrt_recursion(int n);
+int _sqrt_finder(int y, int n);
 
 /* 6. is_prime_number function prototype */
 int is_prime_number(int n);
