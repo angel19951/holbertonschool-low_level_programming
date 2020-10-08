@@ -29,5 +29,6 @@ int isprime_finder(int n, int y);
 
 /* 7. is_palindrome function prototype */
 int is_palindrome(char *s);
+int palindrome_finder(char *s, int beginning, int ending);
 
 #endif
