@@ -25,6 +25,7 @@ int _sqrt_finder(int y, int n);
 
 /* 6. is_prime_number function prototype */
 int is_prime_number(int n);
+int isprime_finder(int n, int y);
 
 /* 7. is_palindrome function prototype */
 int is_palindrome(char *s);
