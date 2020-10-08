@@ -7,27 +7,30 @@
  */
 int is_prime_number(int n)
 {
-	int count;
-	int prime;
-
 	if (n <= 1)
 	{
 		return (0);
 	}
-	prime = 0;
+	return (isprime_finder(n, 2));
+}
 
-	for (count = 2; count <= n / 2; count++)
-	{
-		if ((n % count) == 0)
-		{
-			prime = 1;
-			break;
-		}
-	}
-	if (prime == 0)
+/**
+ * isprime_finder - checks for prime number
+ * @n: number to be checked for prime
+ * @y: checker for a prime number
+ * Return: 1 if y = n , 0 if n % y = 0
+ */
+int isprime_finder(int n, int y)
+{
+	if (y == n)
 	{
 		return (1);
 	}
-	else
+	else if ((n % y) == 0)
+	{
 		return (0);
+	}
+	else
+		return (isprime_finder(n, y + 1));
+
 }
