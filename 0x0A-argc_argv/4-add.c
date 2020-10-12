@@ -13,20 +13,15 @@ int main(int argc, char *argv[])
 {
 	int index, sum;
 
-	if (argc >= 1)
+	for (index = 1; index < argc; index++)
 	{
-		for (index = 1; index < argc; index++)
+		if (*argv[index] >= 'a' && *argv[index] <= 'z')
 		{
-			if (*argv[index] >= 'a' && *argv[index] <= 'z')
-			{
-				printf("Error\n");
+			printf("Error\n");
 				return (1);
-			}
-			sum += atoi(argv[index]);
 		}
-		printf("%d\n", sum);
-		return (0);
+	sum += atoi(argv[index]);
 	}
-	else
-		return (0);
+	printf("%d\n", sum);
+	return (0);
 }
