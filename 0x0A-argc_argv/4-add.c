@@ -21,6 +21,10 @@ int main(int argc, char *argv[])
 	}
 	for (index = 1; index < argc; index++)
 	{
+		if (*argv[index] < 0)
+		{
+			return (1);
+		}
 		if (*argv[index] >= 'a' && *argv[index] <= 'z')
 		{
 			printf("Error\n");
