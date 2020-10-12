@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 
 /**
@@ -18,7 +19,7 @@ int main(int argc, char *argv[])
 		if (*argv[index] >= 'a' && *argv[index] <= 'z')
 		{
 			printf("Error\n");
-				return (-1);
+			return (1);
 		}
 	sum += atoi(argv[index]);
 	}
