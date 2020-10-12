@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		else if (*argv[index] < 0)
+		else if (*argv[index] >= 'A' && *argv[index] <= 'Z')
 		{
 			printf("Error\n");
 			return (1);
