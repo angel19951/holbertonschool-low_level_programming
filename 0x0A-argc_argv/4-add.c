@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	{
 		if (*argv[index] < 0)
 		{
+			printf("Error\n");
 			return (1);
 		}
 		if (*argv[index] >= 'a' && *argv[index] <= 'z')
