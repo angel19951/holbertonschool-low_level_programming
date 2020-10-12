@@ -14,6 +14,11 @@ int main(int argc, char *argv[])
 {
 	int index, sum;
 
+	if (argv[1] == '\0')
+	{
+		printf("0\n");
+		return (0);
+	}
 	for (index = 1; index < argc; index++)
 	{
 		if (*argv[index] >= 'a' && *argv[index] <= 'z')
