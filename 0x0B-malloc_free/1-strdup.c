@@ -21,20 +21,23 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
-
-	dupStr = (char *)malloc((size + 1) * sizeof(char));
-
-	if (dupStr == '\0')
+	else if (str == '\0')
 	{
 		return ('\0');
 	}
-	holderStr = dupStr;
-	for (index = 0; index < size; index++)
-	{
-		*holderStr = *str;
-		holderStr++;
-		str++;
-	}
-	*holderStr = '\0';
+	else
+		dupStr = (char *)malloc((size + 1) * sizeof(char));
+
+		if (dupStr == '\0')
+		{
+			return ('\0');
+		}
+		holderStr = dupStr;
+		for (index = 0; index < size; index++)
+		{
+			*holderStr = *str;
+			holderStr++;
+			str++;
+		}
 	return (dupStr);
 }
