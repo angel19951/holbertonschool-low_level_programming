@@ -23,6 +23,11 @@ char *str_concat(char *s1, char *s2)
 		;
 	concat = sizeS1 + sizeS2 + 1;
 	str = (char *) malloc(concat);
+	if (str == '\0')
+	{
+		return ('\0');
+	}
+
 	while (*s1 != '\0')
 	{
 		str[index] = *s1;
