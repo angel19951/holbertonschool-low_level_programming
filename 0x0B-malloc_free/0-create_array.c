@@ -19,6 +19,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return ('\0');
 	}
+	else if (size <= 0)
+	{
+		return ('\0');
+	}
 	else
 		for (index = 0; index < size; index++)
 		{
