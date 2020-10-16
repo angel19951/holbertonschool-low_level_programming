@@ -1,9 +1,8 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
-/* 0. A library is not a luxury 
- * but one of the necessities of life 
- * function prototypes
- */
+/* 0. A library is not a luxury */
+/* but one of the necessities of life */
+/* function prototypes */
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
