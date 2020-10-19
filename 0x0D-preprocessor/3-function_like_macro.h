@@ -3,9 +3,6 @@
 #endif
 
 #ifndef ABS
-#define ABS
-#endif
-#ifndef ABS
 #define ABS(x) ((x < 0) ? -(x) : (x))
 #endif
 
