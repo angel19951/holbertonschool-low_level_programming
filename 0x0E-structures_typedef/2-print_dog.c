@@ -11,7 +11,7 @@ void print_dog(struct dog *d)
 {
 	if (d == '\0')
 	{
-		printf();
+		printf("");
 		return;
 	}
 	else
