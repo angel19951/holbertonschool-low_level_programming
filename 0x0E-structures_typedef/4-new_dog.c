@@ -51,7 +51,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (newDog == '\0')
 	{
-		exit(0);
+		free(newDog);
 		return ('\0');
 	}
 	newDog->name = _strcpy(name);
