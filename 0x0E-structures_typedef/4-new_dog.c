@@ -1,8 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
 
-
-
 /**
  * _strlength - counts length of a string
  * @str: string to be counted
@@ -53,6 +51,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (newDog == '\0')
 	{
+		exit(0);
 		return ('\0');
 	}
 	newDog->name = _strcpy(name);
