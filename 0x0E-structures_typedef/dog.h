@@ -26,6 +26,9 @@ void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 int _strlength(char *str);
 char *_strcpy(char *str);
+
+/* 5. free dogs function prototype */
+void free_dog(dog_t *d);
 /*_putchar function prototype*/
 int _putchar(char c);
 #endif
