@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
-int _strlength(char *str);
-char *_strcpy(char *str);
+
+
 
 /**
  * _strlength - counts length of a string
