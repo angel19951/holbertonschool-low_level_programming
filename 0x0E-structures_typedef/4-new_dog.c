@@ -3,6 +3,11 @@
 int _strlength(char *str);
 char *_strcpy(char *str);
 
+/*
+ * _strlength - counts length of a string
+ * @str: string to be counted
+ * Return: size of str
+ */
 int _strlength(char *str)
 {
 	int index = 0;
@@ -12,6 +17,12 @@ int _strlength(char *str)
 	}
 	return (index + 1);
 }
+
+/**
+ * _strcpy - copies a string
+ * @str: string to be copied
+ * Return: copy of string
+ */
 char *_strcpy(char *str)
 {
 	int len = _strlength(str);
@@ -42,9 +53,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return ('\0');
 	}
-	newDog->name = name;
+	newDog->name = _strcpy(name);
 	newDog->age = age;
-	newDog->owner = owner;
+	newDog->owner = _strcpy(owner);
 	return (newDog);
 }
 
