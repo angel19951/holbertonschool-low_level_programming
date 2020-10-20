@@ -30,6 +30,7 @@ char *_strcpy(char *str)
 
 	if (ret_str == '\0')
 	{
+		free (ret_str);
 		return ('\0');
 	}
 	for (index = 0; index < len; index++)
