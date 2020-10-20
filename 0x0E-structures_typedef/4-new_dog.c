@@ -30,7 +30,6 @@ char *_strcpy(char *str)
 
 	if (ret_str == '\0')
 	{
-		free (ret_str);
 		return ('\0');
 	}
 	for (index = 0; index < len; index++)
@@ -52,12 +51,24 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (newDog == '\0')
 	{
+		return ('\0');
+	}
+
+	newDog->name = _strcpy(name);
+	if (newDog->name == '\0')
+	{
 		free(newDog);
 		return ('\0');
 	}
-	newDog->name = _strcpy(name);
+
 	newDog->age = age;
+
 	newDog->owner = _strcpy(owner);
+	if (newDog->owner == '\0')
+	{
+		free(newDog);
+		return ('\0');
+	}
 	return (newDog);
 }
 
