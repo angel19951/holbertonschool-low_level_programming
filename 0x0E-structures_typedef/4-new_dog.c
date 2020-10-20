@@ -3,7 +3,7 @@
 int _strlength(char *str);
 char *_strcpy(char *str);
 
-/*
+/**
  * _strlength - counts length of a string
  * @str: string to be counted
  * Return: size of str
@@ -11,6 +11,7 @@ char *_strcpy(char *str);
 int _strlength(char *str)
 {
 	int index = 0;
+
 	while (*(str + index) != '\0')
 	{
 		index++;
@@ -49,6 +50,7 @@ char *_strcpy(char *str)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newDog = malloc(sizeof(dog_t));
+
 	if (newDog == '\0')
 	{
 		return ('\0');
