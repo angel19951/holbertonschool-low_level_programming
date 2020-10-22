@@ -10,24 +10,22 @@
 char *str_concat(char *s1, char *s2)
 {
 	int sizeS1, sizeS2, concat;
-	int index = 0;
+	int index;
 	char *str;
 
-	if (s1 == '\0' && s2 == '\0')
-	{
-		return ('\0');
-	}
+
 	for (sizeS1 = 0; *(s1 + sizeS1) != '\0'; sizeS1++)
 		;
 	for (sizeS2 = 0; *(s2 + sizeS2) != '\0'; sizeS2++)
 		;
 	concat = sizeS1 + sizeS2 + 1;
-	str = (char *) malloc(concat);
+	str = (char *) malloc(sizeof(concat));
 	if (str == '\0')
 	{
 		return ('\0');
 	}
-
+	
+	index = 0;
 	while (*s1 != '\0')
 	{
 		str[index] = *s1;
@@ -43,4 +41,5 @@ char *str_concat(char *s1, char *s2)
 	str[index] = '\0';
 
 	return (str);
+	free(str);
 }
