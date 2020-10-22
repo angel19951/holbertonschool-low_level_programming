@@ -9,16 +9,16 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int sizeS1, sizeS2, index;
+	int sizeS1, sizeS2, index, index2;
 	char *str;
 
 	if (s1 == '\0')
 	{
-		s1 = " ";
+		s1 = "";
 	}
 	if (s2 == '\0')
 	{
-		s2 = " ";
+		s2 = "";
 	}
 	for (sizeS1 = 0; s1[sizeS1] != '\0'; sizeS1++)
 		;
@@ -32,19 +32,15 @@ char *str_concat(char *s1, char *s2)
 		return ('\0');
 	}
 
-	index = 0;
-	while (s1[index] < sizeS1)
+	for (index = 0; index < sizeS1; index++)
 	{
 		str[index] = s1[index];
-		s1++;
-		index++;
 	}
-	while (s2[index] < sizeS2)
+	for (index = index, index2 = 0; index2 < (sizeS1 + sizeS2); index++, index2++)
 	{
-		str[index] = s2[index];
-		s2++;
-		index++;
+		str[index] = s2[index2];
 	}
+
 	str[index] = '\0';
 
 	return (str);
