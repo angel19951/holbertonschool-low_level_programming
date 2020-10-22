@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	for (size = 0; *(str + size) != '\0'; size++)
 		;
 
-	if (size <= 0)
+	if (size == 0)
 	{
 		return ('\0');
 	}
@@ -41,4 +41,5 @@ char *_strdup(char *str)
 		}
 		holderStr = '\0';
 	return (dupStr);
+	free(dupStr);
 }
