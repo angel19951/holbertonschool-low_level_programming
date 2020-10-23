@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * prit_numbers - prints numbers, followed by a new line
+ * print_numbers - prints numbers, followed by a new line
  * @separator: separator between numbers
  * @n: numbers to be printed
  * Return: no return
@@ -16,7 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	(void) separator;
 
 	va_start(nArg, n);
-	
+
 
 	for (index = 0; index < n; index++)
 	{
@@ -31,6 +31,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 	}
 	printf("\n");
-	
+
 	va_end(nArg);
 }
