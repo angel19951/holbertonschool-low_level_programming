@@ -23,23 +23,27 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				printf("%s%c", separator, va_arg(arg, int));
+				separator = ptSeparator;
 				break;
 			case 'f':
 				printf("%s%f", separator, va_arg(arg, double));
+				separator = ptSeparator;
 				break;
 			case 's':
 				strValue = va_arg(arg, char *);
 				if (strValue == NULL)
 				{
-					strValue = "(nil)";
+					printf("%s(nil)", strValue);
+					separator = ptSeparator;
+					break;
 				}
 				printf("%s%s", separator, strValue);
 				break;
 			case 'i':
 				printf("%s%d", separator, va_arg(arg, int));
+				separator = ptSeparator;
 				break;
 		}
-		separator = ptSeparator;
 		pt++;
 	}
 	printf("\n");
