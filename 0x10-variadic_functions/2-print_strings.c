@@ -16,7 +16,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list arg;
 
 	va_start(arg, n);
-	if (n != '%')
+	if (n != 0)
 	{
 		for (index = 0; index < n; index++)
 		{
@@ -40,5 +40,3 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	printf("\n");
 	va_end(arg);
 }
-
-
