@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				strValue = va_arg(arg, char *);
-				if (strValue == '\0')
+				if(strValue == NULL)
 				{
 					printf("%s(nil)", separator);
 					separator = ptSeparator;
