@@ -5,9 +5,9 @@
 
 /**
  * print_strings - prints strings
- * @separator to be printed
+ * @separator: separator to be printed
  * @n: string to be printed
- * Return: no return 
+ * Return: no return
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -27,7 +27,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}
 			else
 				printf("%s", count);
-					
+
 			if (separator != '\0')
 			{
 				if (index != (n - 1))
