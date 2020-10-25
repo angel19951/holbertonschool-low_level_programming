@@ -9,9 +9,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list arg;
-	char *strValue;
-	char *separator = "";
-	char *ptSeparator = ", ";
+	char *strValue, *separator = "", *ptSeparator = ", ";
 	const char *pt;
 
 	va_start(arg, format);
