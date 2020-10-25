@@ -1,7 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-
 /**
  * print_all - printf check and print
  * @format: values to be printed
@@ -12,8 +11,6 @@ void print_all(const char * const format, ...)
 	va_list arg;
 	const char *pt;
 	char *strValue;
-	int iValue, c;
-	float fltValue;
 	char *separator = "";
 	char *ptSeparator = ", ";
 
@@ -24,32 +21,25 @@ void print_all(const char * const format, ...)
 		switch (*pt)
 		{
 			case 'c':
-				printf("%s", separator);
-				c = va_arg(arg, int);
-				printf("%c", c);
+				printf("%s%c", separator, va_arg(arg, int));
 				separator = ptSeparator;
 				break;
 			case 'f':
-				printf("%s", separator);
-				fltValue = va_arg(arg, double);
-				printf("%f", fltValue);
+				printf("%s%f", separator, va_arg(arg, double));
 				separator = ptSeparator;
 				break;
 			case 's':
-				printf("%s", separator);
 				strValue = va_arg(arg, char *);
 				if (*strValue == '\0')
 				{
-					printf("nil");
+					printf("(nil)");
 					break;
 				}
-				printf("%s", strValue);
+				printf("%s%s", separator, strValue);
 				separator = ptSeparator;
 				break;
 			case 'i':
-				printf("%s", separator);
-				iValue = va_arg(arg, int);
-				printf("%d", iValue);
+				printf("%s%d", separator, va_arg(arg, int));
 				separator = ptSeparator;
 				break;
 		}
