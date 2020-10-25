@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		for (index = 0; index < n; index++)
 		{
 			count = va_arg(arg, char *);
-			if (*count == '\0')
+			if (count == '\0')
 			{
 				printf("(nil)");
 			}
