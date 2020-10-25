@@ -14,7 +14,6 @@ void print_all(const char * const format, ...)
 	char *strValue;
 	int iValue, c;
 	float fltValue;
-	char *empty = "";
 	char *separator = "";
 	char *ptSeparator = ", ";
 
@@ -52,9 +51,6 @@ void print_all(const char * const format, ...)
 				iValue = va_arg(arg, int);
 				printf("%d", iValue);
 				separator = ptSeparator;
-				break;
-			default:
-				printf("%s", empty);
 				break;
 		}
 		pt++;
