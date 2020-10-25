@@ -16,7 +16,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list arg;
 
 	va_start(arg, n);
-	if (n != '\0')
+	if (n != '%')
 	{
 		for (index = 0; index < n; index++)
 		{
