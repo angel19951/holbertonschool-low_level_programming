@@ -15,9 +15,7 @@ void print_all(const char * const format, ...)
 	va_start(arg, format);
 	pt = format;
 	if (format == NULL)
-	{
 		return;
-	}
 	while (*pt != '\0')
 	{
 		switch (*pt)
@@ -25,6 +23,7 @@ void print_all(const char * const format, ...)
 			case 'c':
 				printf("%s%c", separator, va_arg(arg, int));
 				break;
+				separator = ptSeparator;
 			case 'f':
 				printf("%s%f", separator, va_arg(arg, double));
 				break;
@@ -37,12 +36,13 @@ void print_all(const char * const format, ...)
 					break;
 				}
 				printf("%s%s", separator, strValue);
+				separator = ptSeparator;
 				break;
 			case 'i':
 				printf("%s%d", separator, va_arg(arg, int));
+				separator = ptSeparator;
 				break;
 		}
-		separator = ptSeparator;
 		pt++;
 	}
 	printf("\n");
