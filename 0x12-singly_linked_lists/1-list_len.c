@@ -14,7 +14,6 @@ size_t list_len(const list_t *h)
 	reader = h;
 	if (reader == NULL)
 	{
-		reader = reader->next;
 		return (0);
 	}
 	while (reader != NULL)
