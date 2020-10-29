@@ -37,4 +37,7 @@ list_t *add_node_end(list_t **head, const char *str);
 /* 4. Free list | function prototype */
 void free_list(list_t *head);
 
+/* 100. function that prints before the main function is executed | function prototype */
+void __attribute__((constructor)) before_main();
+
 #endif
