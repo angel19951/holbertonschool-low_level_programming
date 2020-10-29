@@ -9,7 +9,7 @@
 size_t list_len(const list_t *h)
 {
 	const list_t *reader;
-	int count = 0;
+	size_t count = 0;
 
 	reader = h;
 	if (reader == NULL)
