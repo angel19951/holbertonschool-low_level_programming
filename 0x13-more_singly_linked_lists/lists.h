@@ -31,7 +31,7 @@ size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
 
 /* 3. Add node at the end | function prototype */
-/* listint_t *add_nodeint_end(listint **head, const int n); */
+listint_t *add_nodeint_end(listint_t **head, const int n);
 
 /* 4.Free list | function prototype */
 /* void free_listint(listint_t *head); */
