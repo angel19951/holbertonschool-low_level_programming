@@ -41,7 +41,7 @@ void free_listint(listint_t *head);
 void free_listint2(listint_t **head);
 
 /* 6. Pop | function prototype */
-/* int pop_listint(listint_t **head); */
+int pop_listint(listint_t **head);
 
 /* 7. Get node at index | function prototype */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
@@ -54,6 +54,6 @@ void sum_of_nodes(listint_t *head, int *sum);
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 
 /* 10. Delete at index | function prototype */
-/* int delete_nodeint_at_index(listint_t **head, unsigned int index); */
+int delete_nodeint_at_index(listint_t **head, unsigned int index);
 
 #endif
