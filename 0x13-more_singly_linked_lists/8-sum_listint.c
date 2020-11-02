@@ -8,25 +8,15 @@
 
 int sum_listint(listint_t *head)
 {
+	int sum;
+	listint_t *cur = head;
+
 	if (head == NULL)
 	{
 		return (0);
 	}
+	for (cur = cur->next; cur != NULL; cur = cur->next)
+		sum = sum + cur->n;
 
-	int sum = 0;
-
-	sum_of_nodes(head, &sum);
-
-	return(sum);
-}
-
-void sum_of_nodes(listint_t *head, int *sum)
-{
-	if (head == NULL)
-	{
-		return;
-	}
-	sum_of_nodes(head->next, sum);
-
-	*sum += head->n;
+	return (sum);
 }
