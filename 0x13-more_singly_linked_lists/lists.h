@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -43,13 +44,14 @@ void free_listint2(listint_t **head);
 /* int pop_listint(listint_t **head); */
 
 /* 7. Get node at index | function prototype */
-/* listint_t *get_nodeint_at_index(listint_t *head, unsigned int index); */
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 
 /* 8. Sum list | function prototype */
-/* int sum_listint(listint_t *head); */
+int sum_listint(listint_t *head);
+void sum_of_nodes(listint_t *head, int *sum);
 
 /* 9. Insert | function prototype */
-/* listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n); */
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 
 /* 10. Delete at index | function prototype */
 /* int delete_nodeint_at_index(listint_t **head, unsigned int index); */
