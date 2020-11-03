@@ -48,7 +48,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 
 /* 8. Sum list | function prototype */
 int sum_listint(listint_t *head);
-void sum_nodes(listint_t *head, int *sum);
 
 /* 9. Insert | function prototype */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
