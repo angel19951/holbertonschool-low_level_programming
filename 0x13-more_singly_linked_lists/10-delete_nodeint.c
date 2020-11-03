@@ -1,5 +1,6 @@
 #include "lists.h"
-
+#define SUCCESS 1
+#define FAILURE -1
 /**
  * delete_nodeint_at_index - deletes a specific node
  * @head: refrence to head
@@ -9,28 +10,40 @@
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 
-	listint_t *temp, *next;
-	unsigned int i;
+	listint_t *temp, *hold;
+	unsigned int i = 0;
 
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 	{
-		return (-1);
+		return (FAILURE);
 	}
 
 	temp = *head;
 	if (index == 0)
 	{
-		*head = temp->next;
+		temp = (*head)->next;
+		free(*head);
+		*head = temp;
+		return (SUCCESS);
 	}
-	while (temp != NULL)
+	else
 	{
-		if (i == index)
+		while (temp != NULL)
 		{
-			*head = temp->next;
-			return (1);
+			if (i == index - 1)
+			{
+				if (temp->next == NULL)
+				{
+					return (FAILURE);
+				}
+				hold = temp->next->next;
+				free(temp->next);
+				temp->next = hold;
+				return (SUCCESS);
+				}
+			i++;
+			temp = temp->next;
 		}
-		next = temp->next;
-		temp->next = next;
 	}
-	return (1);
+	return (FAILURE);
 }
