@@ -1,8 +1,9 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
+#include <stdlib.h>
 
 /* 0. 0 | function prototype */
-unsigned int binary_to_unit(const char *b);
+unsigned int binary_to_uint(const char *b);
 
 /* 1. 1 | function prototype */
 void print_binary(unsigned int n);
