@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *
- *
+ * main - prints all possible combinations of 2 numbers
+ * Return: return always 0
  */
 int main(void)
 {
