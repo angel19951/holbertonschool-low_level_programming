@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * flip_bit - counts the number of bits it would be needed
+ * flip_bits - counts the number of bits it would be needed
  * to reach another number
  * @n: number to be counted in bits
  * @m: number to get to in bits
