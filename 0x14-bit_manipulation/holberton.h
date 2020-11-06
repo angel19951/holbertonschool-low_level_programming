@@ -2,11 +2,13 @@
 #define HOLBERTON_H
 #include <stdlib.h>
 
+/* _putchar porototype */
+int _putchar(char c);
 /* 0. 0 | function prototype */
 unsigned int binary_to_uint(const char *b);
 
 /* 1. 1 | function prototype */
-void print_binary(unsigned int n);
+void print_binary(unsigned long int n);
 
 /* 2. 10 | function prototype */
 int get_bit(unsigned long int n, unsigned int index);
