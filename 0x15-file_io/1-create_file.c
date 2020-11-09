@@ -10,8 +10,8 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int w_out, r_in, count;
-	int fd = open(filename, O_CREAT | O_RDWR | O_TRUNC);
+	int w_out, count;
+	int fd = open(filename, O_RDWR | O_TRUNC | O_CREAT, 0600);
 	char *buff = malloc(sizeof(text_content));
 
 	if (filename == NULL)
@@ -27,25 +27,19 @@ int create_file(const char *filename, char *text_content)
 		free(buff);
 		return (-1);
 	}
-	if (text_content == NULL)
+	if (text_content)
 	{
-		w_out = write(fd, " ", 1);
-		return (w_out);
-	}
-	count = 0;
-	while (*(text_content + count) != '\0')
-		count++;
+		count = 0;
+		while (*(text_content + count) != '\0')
+			count++;
 
-	r_in = read(fd, text_content, count);
-	if (r_in == -1)
-		return (-1);
-
-	w_out = write(fd, text_content, count);
-	if (w_out == -1)
-	{
-		free(buff);
-		return (-1);
+		w_out = write(fd, text_content, count);
+		if (w_out == -1)
+		{
+			free(buff);
+			return (-1);
+		}
 	}
 	close(fd);
-	return (w_out);
+	return (1);
 }
