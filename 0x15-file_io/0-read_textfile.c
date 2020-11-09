@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * read_textfile - reads a text file
  * @filename: pointer refrence to file
