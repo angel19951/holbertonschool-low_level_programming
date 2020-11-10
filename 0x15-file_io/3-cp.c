@@ -2,13 +2,13 @@
 
 int main(int ac, char **av)
 {
-	int w_out, f_close_1, f_close_2;
+	int f_close_1, f_close_2;
 	int fd_from, fd_to, count;
 	int buff[1024];
 
 	if (ac != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to %s\n", av[0]);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	fd_from = open(av[1], O_RDONLY);
@@ -23,7 +23,14 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't open fd %s\n", av[2]);
 		exit(99);
 	}
-	w_out = write(fd_to, buff, count);
+	while ((count = read(fd_from, buff, 1024)) > 0)
+	{
+		if (fd_to == -1 || (write(fd_to, buff, count)) != count)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't open fd %s\n", av[2]);
+			exit(99);
+		}
+	}
 	f_close_1 = close(fd_from);
 	if (f_close_1 == -1)
 	{
@@ -36,5 +43,6 @@ int main(int ac, char **av)
 		dprintf (STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
-	return (w_out);
+	return (0);
+
 }
