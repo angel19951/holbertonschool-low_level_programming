@@ -9,7 +9,7 @@
 int main(int ac, char **av)
 {
 	int f_close_1, f_close_2, fd_from, fd_to, count;
-	int buff[1024];
+	char buff[1024];
 
 	if (ac != 3)
 	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
