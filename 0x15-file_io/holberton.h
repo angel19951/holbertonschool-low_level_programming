@@ -7,9 +7,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
-#include <sys/eerno.h>
-#include <sys/eerno.h>
-#include <sys/eerno.h>
+#include <sys/errno.h>
 
 /* _putchar function prototype */
 int _putchar(char c);
