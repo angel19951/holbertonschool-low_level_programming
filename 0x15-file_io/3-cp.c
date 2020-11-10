@@ -19,12 +19,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	fd_to = open(av[2], O_TRUNC | O_CREAT | O_RDWR, 0664);
-	if (fd_to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't open fd %s\n", av[2]);
-		exit(98);
-	}
+	fd_to = open(av[2], O_TRUNC | O_CREAT | O_WRONLY, 0664);
 	while ((count = read(fd_from, buff, 1024)) > 0)
 	{
 		if (fd_to == -1 || (write(fd_to, buff, count)) != count)
@@ -32,6 +27,11 @@ int main(int ac, char **av)
 			dprintf(STDERR_FILENO, "Error: Can't open fd %s\n", av[2]);
 			exit(99);
 		}
+	}
+	if (count == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+		exit(98);
 	}
 	f_close_1 = close(fd_from);
 	if (f_close_1 == -1)
