@@ -1,16 +1,18 @@
 #include "holberton.h"
 
+/**
+ * main - copies file contents to another file
+ * @ac: argument count
+ * @av: argument values
+ * Return: always 0
+ */
 int main(int ac, char **av)
 {
-	int f_close_1, f_close_2;
-	int fd_from, fd_to, count;
+	int f_close_1, f_close_2, fd_from, fd_to, count;
 	int buff[1024];
 
 	if (ac != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-	}
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	fd_from = open(av[1], O_RDONLY);
 	if (fd_from == -1)
 	{
@@ -34,15 +36,14 @@ int main(int ac, char **av)
 	f_close_1 = close(fd_from);
 	if (f_close_1 == -1)
 	{
-		dprintf (STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
 		exit(100);
 	}
 	f_close_2 = close(fd_to);
 	if (f_close_2 == -1)
 	{
-		dprintf (STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
 	return (0);
-
 }
