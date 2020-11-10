@@ -23,7 +23,7 @@ int main(int ac, char **av)
 	if (fd_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't open fd %s\n", av[2]);
-		exit(99);
+		exit(98);
 	}
 	while ((count = read(fd_from, buff, 1024)) > 0)
 	{
