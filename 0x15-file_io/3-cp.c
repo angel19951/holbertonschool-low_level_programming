@@ -36,13 +36,13 @@ int main(int ac, char **av)
 	f_close_1 = close(fd_from);
 	if (f_close_1 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd_from);
 		exit(100);
 	}
 	f_close_2 = close(fd_to);
 	if (f_close_2 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd_to);
 		exit(100);
 	}
 	return (0);
