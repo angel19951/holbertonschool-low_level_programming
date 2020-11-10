@@ -7,6 +7,9 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
+#include <sys/eerno.h>
+#include <sys/eerno.h>
+#include <sys/eerno.h>
 
 /* _putchar function prototype */
 int _putchar(char c);
@@ -19,7 +22,5 @@ int create_file(const char *filename, char *text_content);
 
 /* 2. Speak gently, she can hear | function prototype */
 int append_text_to_file(const char *filename, char *text_content);
-
-/* 3. cp | function prototype */
 
 #endif
