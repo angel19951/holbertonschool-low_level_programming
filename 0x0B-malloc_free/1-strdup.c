@@ -14,26 +14,26 @@ char *_strdup(char *str)
 	int size;
 	int index;
 
-	if (str == '\0')
+	if (str == NULL)
 	{
-		return ('\0');
+		return (NULL);
 	}
+
 	for (size = 0; *(str + size) != '\0'; size++)
 		;
 
-	dupStr = (char *)malloc((size + 1) * sizeof(char));
-	if (dupStr == '\0')
+	dupStr = malloc((size + 1) * sizeof(char));
+	if (dupStr == NULL)
 	{
-		return ('\0');
+		return (NULL);
 	}
 	holderStr = dupStr;
 	for (index = 0; index < size; index++)
 	{
 		*holderStr = *str;
 		holderStr++;
-	str++;
+		str++;
 	}
-	holderStr = '\0';
+	*holderStr = '\0';
 	return (dupStr);
-	free(dupStr);
 }
