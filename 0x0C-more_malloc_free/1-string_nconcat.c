@@ -5,6 +5,7 @@
  * string_nconcat - concatenate two strings
  * @s1: first string to concat
  * @s2: string to add and end
+ * @n: number of characters for s2
  * Return: NULL if failed || ne concatenated string if success
  */
 
