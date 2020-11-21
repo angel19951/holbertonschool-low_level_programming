@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 			sum += 1;
 		}
 	}
-	concat = malloc(sizeof(char) * (ac + (sum + 1));
+	concat = malloc(sizeof(char) * (ac + (sum + 1)));
 	if (concat == NULL)
 	{
 		return (NULL);
