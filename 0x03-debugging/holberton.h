@@ -1,6 +1,6 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
-
+#include <stdio.h>
 /* 0.positive or negative function prototype */
 void positive_or_negative(int);
 
