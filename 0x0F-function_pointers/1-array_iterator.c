@@ -2,7 +2,9 @@
 /**
  * array_iterator - gives a parameter on each element of an array
  * @size: size of array
- * @action: pointer to a function needed
+ * @array: pointer for elements to pass
+ * @action: pointer to the function needed
+ * Return: no return for void function
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
