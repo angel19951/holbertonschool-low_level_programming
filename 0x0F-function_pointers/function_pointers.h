@@ -1,6 +1,6 @@
 #ifndef FUNCTION_POINTERS
 #define FUNCTION_POINTERS
-
+#include <stdio.h>
 /* _putchar function prototype */
 int _putchar(char c);
 
@@ -10,7 +10,7 @@ void print_name(char *name, void (*f)(char *));
 /* 1.  If you spend too much time thinking about a thing, */
 /* you'll never get it done | Function prototype */
 /* void array_iterator(int *array, size_t size, void (*action)(int)); */
-
+void array_iterator(int *array, size_t size, void (*action)(int));
 /* 2. To hell with circumstances; I create opportunities| Function prototype */
 int int_index(int *array, int size, int (*cmp)(int));
 
