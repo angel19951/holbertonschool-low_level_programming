@@ -11,13 +11,19 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
 
-	if (*array < 0 || array == '\0')
-		return;
-	if (action == '\0')
-		return;
-
-	for (i = 0; i < size; i++)
+	if (array == NULL)
 	{
-		(*action)(*(array + i));
+		return;
+	}
+	else if (action == NULL)
+	{
+		return;
+	}
+	else
+	{
+		for (i = 0; i < size; i++)
+		{
+			(*action)(*(array + i));
+		}
 	}
 }
