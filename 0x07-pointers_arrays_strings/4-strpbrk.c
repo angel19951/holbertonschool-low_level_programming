@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * strpbrk - locates the firts ocurrence in the string s of any bytes in the
+ * _strpbrk - locates the firts ocurrence in the string s of any bytes in the
  * string accept
  * @s: chars to look at
  * @accept: accepted chars
+ * Return: Null if failed || Set of bytes
  */
 
 char *_strpbrk(char *s, char *accept)
