@@ -9,8 +9,6 @@
 
 void set_string(char **s, char *to)
 {
-	if (*s == '\0' || *to == '\0')
-		return;
 	*s = to;
 }
 
