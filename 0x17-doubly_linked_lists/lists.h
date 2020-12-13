@@ -1,5 +1,5 @@
-#ifndef __LISTS_H__
-#define __LISTS_H__
+#ifndef LISTS_H
+#define LISTS_H
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -34,17 +34,4 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 
 /* 4 - frees a list */
 void free_dlistint(dlistint_t *head);
-
-/* 5 - get a node at position */
-dlistint_t *get_dnodeint_at_index(dlistint *head, unsigned int index);
-
-/* 6 - sums all data in a linked list */
-int sum_dlistint(dlistint_t *head);
-
-/* 7 - inserts a new node at a given position */
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
-
-/* 8 -deletes the node at index of a list */
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
-
 #endif
