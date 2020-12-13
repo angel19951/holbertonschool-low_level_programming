@@ -34,4 +34,10 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 
 /* 4 - frees a list */
 void free_dlistint(dlistint_t *head);
+
+/* 5 - gets a node at a index */
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
+
+/* 6 - sums all elements of a list */
+int sum_dlistint(dlistint_t *head);
 #endif
