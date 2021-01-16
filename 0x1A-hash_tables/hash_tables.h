@@ -33,9 +33,12 @@ typedef struct hash_table_s
 	hash_node_t **array;
 } hash_table_t;
 
-/* Task 1 | Create a hash table */
+/* Task 0 | Create a hash table */
 hash_table_t *hash_table_create(unsigned long int size);
 
-/* Task 2 | Implement djb2 */
+/* Task 1 | Implement djb2 */
 unsigned long int hash_djb2(const unsigned char *str);
+
+/* Task 2 | Locate and return index at key */
+unsigned long int key_index(const unsigned char *key, unsigned long int size);
 #endif
