@@ -2,7 +2,7 @@
 # Variables, compiler, source files, commands
 CC=gcc
 SRC=main.c holberton.c
-OBJ=$(SRC:.o=.c)
+OBJ=$(SRC:.c=.o)
 NAME=holberton
 RM=rm -f
 
