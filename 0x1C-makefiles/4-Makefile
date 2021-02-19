@@ -1,0 +1,31 @@
+# Makes an object file with the given name
+# Variables, compiler, source files,
+# commands, flags for compile errors
+CC=gcc
+SRC=main.c holberton.c
+OBJ=$(SRC:.c=.o)
+NAME=holberton
+RM=rm -f
+CFLAGS=-Wall -Werror -Wextra -pedantic
+
+# Execute given commands
+all: make_file
+
+# Creates an object file with the desired name
+make_file: $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+# Forcefuly deletes a give file
+clean:
+	$(RM) *~ $(NAME)
+
+# Deletes all files with the .o extension
+oclean:
+	$(RM) *.o
+
+# Executes all clean functions
+fclean: clean oclean
+
+# Reloads all builds
+re: fclean all
+
