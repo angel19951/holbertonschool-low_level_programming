@@ -2,12 +2,15 @@
 # Variables, compiler, source files, commands
 CC=gcc
 SRC=main.c holberton.c
-OBJ=$(SRC:.o = SRC:.c)
+OBJ=$(SRC:.o=.c)
 NAME=holberton
 RM=rm -f
 
 # Execute given commands
-all:
+all: make_file
+
+# Creates an object file with the desired name
+make_file: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 # Forcefuly deletes a give file
