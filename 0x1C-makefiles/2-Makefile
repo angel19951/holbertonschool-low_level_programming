@@ -1,8 +1,10 @@
 # Creates an object file with the given name
 CC = gcc
 SRC = main.c holberton.c
-OBJ = $(SRC:.c = .o)
+OBJ = $(SRC:.c=.o)
 NAME = holberton
 
-all:
+all: make_file
+
+make_file: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
