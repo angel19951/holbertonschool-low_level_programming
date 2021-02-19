@@ -1,0 +1,26 @@
+# Makes an object file with the given name
+# Variables, compiler, source files, commands
+CC=gcc
+SRC=main.c holberton.c
+OBJ=$(SRC:.o = SRC:.c)
+NAME=holberton
+RM=rm -f
+
+# Execute given commands
+all:
+	$(CC) $(OBJ) -o $(NAME)
+
+# Forcefuly deletes a give file
+clean:
+	$(RM) *~ $(NAME)
+
+# Deletes all files with the .o extension
+oclean:
+	$(RM) *.o
+
+# Executes all clean functions
+fclean: clean oclean
+
+# Reloads all builds
+re: fclean all
+
