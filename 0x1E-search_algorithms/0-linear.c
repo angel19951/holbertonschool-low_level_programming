@@ -10,6 +10,9 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
+	if (array == NULL)
+		return (-1);
+
 	for (unsigned int cnt = 0; cnt < size; cnt++)
 	{
 		printf("Value checked array[%d] = [%d]\n", cnt, *(array + cnt));
